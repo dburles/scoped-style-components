@@ -1,0 +1,51 @@
+{
+  "name": "scoped-style-components",
+  "version": "1.0.0",
+  "description": "Utility React components for scoping CSS with @scope",
+  "author": "David Burles",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dburles/scoped-style-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dburles/scoped-style-components/issues"
+  },
+  "homepage": "https://github.com/dburles/scoped-style-components#readme",
+  "keywords": [
+    "scope",
+    "css",
+    "styles",
+    "react",
+    "css-in-js"
+  ],
+  "type": "module",
+  "scripts": {
+    "prepare": "tsc",
+    "test": "tsc --noEmit",
+    "prepublishOnly": "npm test"
+  },
+  "exports": {
+    "./Style.js": "./Style.js",
+    "./StyleLink.js": "./StyleLink.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "Style.js",
+    "Style.d.ts",
+    "Style.js.map",
+    "StyleLink.js",
+    "StyleLink.d.ts",
+    "StyleLink.js.map"
+  ],
+  "dependencies": {
+    "react": "^18 || ^19"
+  },
+  "peerDependencies": {
+    "react": "^18 || ^19"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3"
+  }
+}
